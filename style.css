@@ -1,0 +1,137 @@
+:root{
+    background-color: #c00e67;
+    --main: #2b222e;
+    --light: #27040b;
+    --dark: #060608;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: #7e431b;
+}
+header{
+    text-align: center;
+    padding: 60px 20px;
+    color: rgb(12, 158, 151);
+    background-color: linear-gradiant(120deg,#591972, #1592a8);
+}
+header h1{
+    animation: fadein 2s;
+}
+.btn, button {
+    display: inline-block;
+    background: var(--main);
+    color: rgb(230, 247, 245);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor:pointer;
+    }
+header .btn {
+    background-color: rgb(15, 181, 187);
+    color: var(--main);
+    margin-top: 15px;
+header .btn:hover{
+    background-color: #bfdd3a;
+}
+}
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #fff8fe;
+    padding: 15px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--main);
+}
+nav a:hover{
+    color: #4f457e;
+}
+section{
+    padding: 30px 6%;
+}
+h2{
+    color: var(--main);
+    margin-bottom: 15px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    flex: 1 1 200px;
+    padding: 20px;
+    background-color: rgb(110, 72, 145);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+    transition: translatey(-5px);
+}
+.card:hover{
+    transform: translatey(-5px);
+}
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+form{
+    max-width: 600px;
+    margin: auto;
+}
+.input:focus,select:focus,textarea:2px soild #a05deg;
+input,select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #c3c6c9;
+    border-radius: 5px;
+}
+.login-form input[type="checkbox"] {
+    width: auto;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.full{
+    grid-column: 1 / -1;
+}
+button:hover{
+    background-color: rgb(155, 89, 36);
+}
+footer{
+    background-color: var(--dark);
+    color: antiquewhite;
+    text-align: center;
+}
+@keyframes fadein { 
+    }
+    from{
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+@media (max-width: 768px) {
+    }
+        .blog-grid{
+            grid-template-columns: 1fr;
+        }
+        .full {
+            grid-column: auto;
+        }
+        nav{
+            gap: 10px;
+        }
+        
+    
